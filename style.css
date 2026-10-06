@@ -1,61 +1,73 @@
-body {
-  background-color: lightgreen;
-  
-}
-
-.main {
-  height: 32rem;
-  width: 46rem;
-  background-color: white;
+.card {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 20px black;
   margin: 100px auto;
 }
 
-.top-bar {
-  border: 1px solid antiquewhite;
-  height: 3rem;
-  text-align: left;
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(132, 159, 150);
-
-}
-.image {
-    height:462px;
-    width: 350px;
-    border: 1px solid antiquewhite;
-   margin-left: 0px;
-
+#dp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 50px;
 }
 
-img{
-height:462px;
-width: 350px;
-margin-left: 0px;
+.profile {
+  background-color: rgb(245, 233, 185);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+  border-bottom: 0.5px solid rgb(220, 213, 213);
 }
 
-.inner {
-    display: flex;
+.subdetails {
+  color: rgb(166, 173, 173);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
 }
 
-.detail {
-   padding-left: 20px;
+.personalInfo {
+  line-height: 5px;
+}
+
+#username {
+  font-weight: bolder;
+  color:rgb(81, 85, 85);
+}
+
+.details {
+  background-color: rgba(43, 89, 30, 0.84);
+  height: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 h1 {
-    
-     font-family: "Courier New", Courier, monospace;
-  color: rgb(103, 106, 105);
-   }
-
-p {
-    font-family: Arial,  sans-serif;
-    text-transform: capitalize;
+ font-size: 20px;
+ color: rgb(36, 22, 22);
 }
 
-button {
-    font-size: 15px;
-    background-color: rgb(190, 203, 203);
-    color: rgb(60, 54, 54);
-    height: 2rem;
-    border-radius: 2px;
-   
+p{
+  color: rgb(146, 144, 144);
+}
+
+span {
+  display: inline-block;
+  line-height: 2.5px;
+  margin: 15px;
+}
+
+#msg {
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+#more {
+  margin: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgb(189, 193, 189);
 }
