@@ -8,12 +8,28 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    filename: String,
-    url: String,
+  filename: {
+    type: String,
+    default: "listingimage",
   },
-  price: Number,
+  url: {
+    type: String,
+    default:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+  },
+},
+  price: {
+  type: Number,
+  required: true,
+  },
   location: String,
   country: String,
+ reviews: [
+  {
+    type: Schema.Types.ObjectId,
+    ref: "Review",
+  },
+],
 });
 
 const Listing = mongoose.model("Listings", listingSchema);
